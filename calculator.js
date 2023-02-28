@@ -26,8 +26,8 @@ const modulus = function (a, b){
 //     }
 // }
 
-const even = function (a){
-    if (modulus(a, 2) === 0){
+const even = function (r){
+    if (modulus(r, 2) === 0){
         return true;
     } else {
         return false;

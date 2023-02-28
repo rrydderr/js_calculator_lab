@@ -107,10 +107,30 @@ test('can determine whether number is even', () => {
 });
 
 test('can determine whether number is even', () => {
+  expected = true;
+  actual = even(963945739457348545093450934);
+  expect(actual).toBe(expected);
+});
+
+test('can determine whether number is even', () => {
   expected = false;
   actual = even(55);
   expect(actual).toBe(expected);
 });
+
+//NUMBER IS TOO BIG FOR INT
+// test('can determine whether number is even', () => {
+//   expected = true;
+//   actual = even(963945739457348545093450934);
+//   expect(actual).toBe(expected);
+// });
+
+  test('can find out whether a large number is even', () => {
+    expected = true;
+    actual = even(123465789123456); // This is almost the maximum of testing
+    console.log(123465789123456);
+    expect(actual).toBe(expected);
+  });
 });
 
 // describe('odd', () => {
