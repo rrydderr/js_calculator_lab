@@ -113,16 +113,29 @@ test('can determine whether number is even', () => {
 });
 });
 
-describe('odd', () => {
-  test('can determine whether number is odd', () => {
-    expected = true;
-    actual = odd(97);
-    expect(actual).toBe(expected);
-  });
+// describe('odd', () => {
+//   test('can determine whether number is odd', () => {
+//     expected = true;
+//     actual = odd(97);
+//     expect(actual).toBe(expected);
+//   });
 
-  test('can determine whether number is odd', () => {
-    expected = false;
-    actual = odd(48);
-    expect(actual).toBe(expected);
-  });
+//   test('can determine whether number is odd', () => {
+//     expected = false;
+//     actual = odd(48);
+//     expect(actual).toBe(expected);
+//   });
+
+  describe('odd', () => {
+    test('can determine whether number is odd', () => {
+      expected = true;
+      actual = odd(5);
+      expect(actual).toBe(expected);
+    });
+  
+    test('can determine whether number is odd', () => {
+      expected = false;
+      actual = odd(48);
+      expect(actual).toBe(expected);
+    });
 });

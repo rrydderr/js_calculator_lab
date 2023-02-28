@@ -18,21 +18,39 @@ const modulus = function (a, b){
     return a % b;
 }
 
+// const even = function (a){
+//     if (a % 2 === 0){
+//         return true;
+//     } else {
+//         return false; s
+//     }
+// }
+
 const even = function (a){
-    if (a % 2 === 0){
+    if (modulus(a, 2) === 0){
         return true;
     } else {
         return false;
     }
 }
 
+// const odd = function (a) {
+//     if (a % 2 !== 0){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
 const odd = function (a) {
-    if (a % 2 !== 0){
+    even;
+    if  (!even(a)){
         return true;
     } else {
         return false;
     }
 }
+
 
 module.exports = { 
     sum, 
