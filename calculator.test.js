@@ -55,9 +55,9 @@ describe('subtract', () => {
 describe('multiply', () => {
 
   test('can multiply two negative numbers', () => {
-    expected = 25;
+    const expected = 25;
     const actual = multiply(-5, -5);
-    const expect(actual).toBe(expected);
+    expect(actual).toBe(expected);
   });
 
   test('can multiply zero', () => {
